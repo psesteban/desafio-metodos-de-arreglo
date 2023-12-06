@@ -47,7 +47,6 @@ const updateTaskList = () => {
     )
     .join("");
   updateTaskCount();
-  console.log(tasks);
 };
 
 const updateTaskCount = () => {
