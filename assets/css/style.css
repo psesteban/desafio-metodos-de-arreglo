@@ -8,21 +8,11 @@ body {
     margin: 0 auto;
   }
   
-  .task {
-    margin-bottom: 10px;
-  }
-  
+
   .list-group-item {
     display: flex;
     justify-content: space-between;
     
   }
 
-  .list-group-item input {
-    padding: 2%;
-    align-items: center;    
-  }
 
-  .list-group-item button {
-    margin-left: 10%;
-  }
