@@ -11,27 +11,29 @@
 </head>
 
 <body>
-    <main id="app">
+    <main>
         <h1>Todo LisTo </h1>
-        <div class="input-group mb-3">
+        <div class="input-group mb-3" id="inputTask">
             <label for="taskInput">Nueva Tarea : </label>
             <input type="text" class="form-control" placeholder="Agrega aquí tu tarea" aria-label="Task"
                 aria-describedby="button-addon2" id="taskInput">
             <button class="btn btn-outline-primary" type="button" id="buttonAdd">Agregar</button>
         </div>
-        <div>
-            <p>Total de Tareas: <span id="totalTasks">0</span></p>
-            <p>Tareas Completadas: <span id="completedTasks">0</span></p>
-        </div>
         <section>
+            <div id= totalList>
+                <p>Total de Tareas: <span id="totalTasks">0</span></p>
+                <p>Tareas Completadas: <span id="completedTasks">0</span></p>
+            </div>
+         <div id= screenList>
             <ul class="list-group list-group-horizontal">
-                <li class="list-group-item">ID</li>
-                <li class="list-group-item">Tarea</li>
+                <li class="list-group-item" id= headId>ID</li>
+                <li class="list-group-item" id= headTask>Tarea</li>
             </ul>
             <ul class="list-group" id="taskList">
 
-
             </ul>
+        </id>
+        
         </section>
     </main>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"

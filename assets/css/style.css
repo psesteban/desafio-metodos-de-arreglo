@@ -1,18 +1,46 @@
 body {
-    font-family: Arial, sans-serif;
-    margin: 20px;
-  }
-  
-  #app {
-    max-width: 600px;
-    margin: 0 auto;
-  }
-  
+  font-family: Arial, sans-serif;
+  margin: 5px;
+}
 
-  .list-group-item {
-    display: flex;
-    justify-content: space-between;
-    
-  }
+h1 {
+  margin: 5%;
+}
+main {
+  max-width: 80%;
+  margin: 0 auto;
+}
 
+.list-group-item {
+  display: flex;
+  justify-content: space-between;
+}
 
+section {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5%;
+}
+
+#totalList {
+  border: 2px solid black;
+  max-height: 18vh;
+} 
+
+#totalList p {
+  padding: 5px;
+}
+
+#screenList {
+  width: 70%;
+}
+
+#headId {
+  width: 10%;
+}
+
+#headTask {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
