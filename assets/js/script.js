@@ -24,7 +24,7 @@ bottonAdd.addEventListener("click", () => {
   if (input.value === "") return;
   tasks.push({
     id: Math.random().toString(36).slice(9),
-    description: input.value,
+    description: input.value.trim(),
   });
   updateTaskList();
   input.value = "";
@@ -39,7 +39,7 @@ const updateTaskList = () => {
   <input class="form-check-input me-1" type="checkbox" value="option" onClick="checkBox('${
     task.id
   }')" ${task.completed ? "checked" : ""}>
-  <p>${task.description} </p>
+  <p style="${task.completed ? 'text-decoration: line-through;' : ''}">${task.description} </p>
   <button type="button" class="btn btn-danger" onClick="deleteTask('${
     task.id
   }')">X</button>
